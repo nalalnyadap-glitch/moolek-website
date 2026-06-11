@@ -65,8 +65,8 @@ export default function OfficePage() {
             {/* Spirit Shrine (San Phra Phum - simplified) */}
             <div className="relative flex flex-col items-center ml-4">
               <div className="w-16 h-20 bg-[#FFD700] border-2 border-[#DAA520] rounded-sm relative shadow-sm">
-                {/* Roof */}
-                <div className="absolute -top-6 left-0 w-full h-6 bg-[#B22222] clip-path-polygon-[50%_0%,0%_100%,100%_100%] border-x-2 border-t-2 border-[#800000]"></div>
+                {/* Roof - Replaced custom class with Tailwind arbitrary value clip-path */}
+                <div className="absolute -top-6 left-0 w-full h-6 bg-[#B22222] [clip-path:polygon(50%_0%,0%_100%,100%_100%)] border-x-2 border-t-2 border-[#800000]"></div>
                 {/* Pink Garland */}
                 <div className="absolute top-4 -left-1 -right-1 h-2 bg-pink-300 rounded-full border border-pink-400"></div>
                 {/* Strawberry Soda */}
@@ -110,12 +110,6 @@ export default function OfficePage() {
       <footer className="absolute bottom-8 text-xs opacity-30">
         © 2026 Moolek • Minimal Mu Spirit
       </footer>
-
-      <style jsx global>{`
-        .clip-path-polygon {
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        }
-      `}</style>
     </div>
   );
 }
