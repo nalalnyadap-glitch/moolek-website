@@ -143,13 +143,6 @@ export default function DreamPage() {
           </div>
         )}
       </div>
-
-      <style jsx global>{`
-        @keyframes glow {
-          0%, 100% { opacity: 0.3; }
-          50% { opacity: 0.6; }
-        }
-      `}</style>
     </div>
   );
 }
